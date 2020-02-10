@@ -75,22 +75,20 @@ function clearDisplayer() {
 
 function withdraw() {
   const billsDisplayer = document.getElementById("bills-displayer");
-  debugger;
   let notas = parseInt(displayer.value);
 
-  debugger;
   if (notas < 0){
     alert('400 Error! Valor invalido');
     clearDisplayer(); 
+  } else if(notas === ""){
+    alert('400 Error! Valor nulo');
+    clearDisplayer();
   } else if(isNaN(notas)){  
-    alert('400 Error! Informar apenas valores numericos');
+    alert('400 Error ou valor nulo! Informar apenas valores numericos');
     clearDisplayer();
   } else if (notas % 10 !== 0) {
     alert('400 Error! Notas indisponiveis');
     clearDisplayer();  
-  } else if(notas === ""){
-    alert('400 Error! Valor nulo');
-    clearDisplayer();
   } else {
     while (notas > 0) {
       if (notas >= 100) {
