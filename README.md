@@ -23,7 +23,7 @@
 
 # :rocket: Features
 
-- Only HTML, CSS and Javascript\
+- Only HTML, CSS and Javascript
 - JS Logic
 
 # :framed_picture: UI Documentation
